@@ -1,0 +1,10 @@
+server:
+  port: 8081
+
+# 定义IP -> Address配置
+ip:
+  convert:
+    conf:
+      gaode:
+        key: 8aa7b7abd4d843d8d5b55d2fdb3ff74b
+        url: https://restapi.amap.com/v3/ip

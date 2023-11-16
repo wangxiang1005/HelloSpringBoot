@@ -1,0 +1,6 @@
+server:
+  port: 8089
+# Netty配置
+netty:
+  port: 8088
+  bossThread: 1
