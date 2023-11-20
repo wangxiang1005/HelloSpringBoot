@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: hello-springboot-grpc-order-server
+
+server:
+  port: 8082
+
+grpc:
+  server:
+    port: 8072
+
+# 定义调用优惠券服务的GRPC
+coupon:
+  server:
+    address: localhost:8071
+
+# 定义调用商品服务的GRPC
+product:
+  server:
+    address: localhost:8073

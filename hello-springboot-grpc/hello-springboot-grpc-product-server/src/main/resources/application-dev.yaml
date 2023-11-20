@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: hello-springboot-grpc-product-server
+
+server:
+  port: 8083
+
+grpc:
+  server:
+    port: 8073

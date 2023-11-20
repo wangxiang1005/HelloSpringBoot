@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: hello-springboot-grpc-coupon-server
+
+server:
+  port: 8081
+
+grpc:
+  server:
+    port: 8071

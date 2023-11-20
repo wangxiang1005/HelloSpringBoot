@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.paladin</groupId>
+        <artifactId>HelloSpringBoot</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>hello-springboot-grpc</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>hello-springboot-grpc-common</module>
+        <module>hello-springboot-grpc-coupon-server</module>
+        <module>hello-springboot-grpc-order-server</module>
+        <module>hello-springboot-grpc-product-server</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- grpc版本-->
+        <grpc-version>1.42.2</grpc-version>
+        <!-- service和client要使用的lib版本-->
+        <common-version>1.0-SNAPSHOT</common-version>
+        <!--  netty版本-->
+        <netty-version>4.1.65.Final</netty-version>
+        <!--  Springboot版本-->
+        <spring-boot.version>2.6.4</spring-boot.version>
+        <!-- Springboot-grpc版本-用于server服务注解使用-->
+        <grpc-spring-boot-starter.version>2.13.1.RELEASE</grpc-spring-boot-starter.version>
+        <!-- maven构建工具版本-->
+        <maven-plugin-version>3.8.1</maven-plugin-version>
+        <!-- lombok-->
+        <lombok-version>1.18.28</lombok-version>
+        <!--fastjson-->
+        <fastjson.version>2.0.38</fastjson.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.paladin</groupId>
+                <artifactId>hello-springboot-grpc-common</artifactId>
+                <version>${common-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.grpc</groupId>
+                <artifactId>grpc-netty</artifactId>
+                <version>${grpc-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.grpc</groupId>
+                <artifactId>grpc-protobuf</artifactId>
+                <version>${grpc-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.grpc</groupId>
+                <artifactId>grpc-stub</artifactId>
+                <version>${grpc-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-common</artifactId>
+                <version>${netty-version}</version>
+            </dependency>
+            <!-- spring boot grpc 依赖 -->
+            <dependency>
+                <groupId>net.devh</groupId>
+                <artifactId>grpc-client-spring-boot-starter</artifactId>
+                <version>${grpc-spring-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.devh</groupId>
+                <artifactId>grpc-server-spring-boot-starter</artifactId>
+                <version>${grpc-spring-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok-version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

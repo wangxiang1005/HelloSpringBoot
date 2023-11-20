@@ -26,13 +26,15 @@
         <module>hello-springboot-batch</module>
         <module>hello-springboot-redis</module>
         <module>hello-springboot-echarts</module>
+        <module>hello-springboot-grpc</module>
+        <module>hello-springboot-grpc/hello-springboot-grpc-order-server</module>
+        <module>hello-springboot-grpc/hello-springboot-grpc-product-server</module>
     </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
         <jackson-databind-version>2.9.4</jackson-databind-version>
         <druid.version>1.1.2</druid.version>
         <mysql-connector.version>8.0.7-dmr</mysql-connector.version>
@@ -68,7 +70,8 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <optional>true</optional>
+            <version>1.18.30</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
