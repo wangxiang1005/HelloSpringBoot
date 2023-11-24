@@ -1,0 +1,11 @@
+server:
+  port: 8018
+
+spring:
+  application:
+    name: hello-springboot-redis
+
+# 配置redis
+redis:
+  host: 192.168.5.179
+  port: 6379

@@ -1,0 +1,18 @@
+server:
+  port: 8013
+
+spring:
+  application:
+    name: hello-springboot-jwt
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.5.179:3306/hello?allowPublicKeyRetrieval=true&characterEncoding=UTF-8&allowMultiQueries=true&useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 8
+      max-active: 20
+      max-wait: 60000
+      min-evictable-idle-time-millis: 30000
