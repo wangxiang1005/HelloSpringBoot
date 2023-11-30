@@ -125,7 +125,7 @@ public class EasyExcelUtil implements RowWriteHandler {
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
-    public class CellMerge {
+    public static class CellMerge {
         private int[] mergeColumIndex;
         private int[] mergeRuleColumIndex;
     }
@@ -138,7 +138,7 @@ public class EasyExcelUtil implements RowWriteHandler {
      */
     public static CellMerge setCellMerge(int[] mergeColumIndex,int[] mergeRuleColumIndex){
         EasyExcelUtil excelUtil = new EasyExcelUtil();
-        CellMerge cellMerge = excelUtil.new CellMerge();
+        CellMerge cellMerge = new CellMerge();
         cellMerge.setMergeColumIndex(mergeColumIndex);
         cellMerge.setMergeRuleColumIndex(mergeRuleColumIndex);
         return cellMerge;

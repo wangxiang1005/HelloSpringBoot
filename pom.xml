@@ -17,8 +17,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>hello-springboot-netty-server</module>
-        <module>hello-springboot-netty-client</module>
         <module>hello-springboot-starter</module>
         <module>hello-springboot-application</module>
         <module>hello-springboot-aop</module>
@@ -31,6 +29,7 @@
         <module>hello-springboot-execl</module>
         <module>hello-springboot-jwt</module>
         <module>hello-springboot-redis</module>
+        <module>hello-springboot-netty</module>
     </modules>
 
     <properties>

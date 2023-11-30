@@ -1,0 +1,10 @@
+server:
+  port: 8015
+
+spring:
+  application:
+    name: hello-springboot-batch
+  datasource:
+    url: jdbc:mysql://192.168.5.179:3306/springbatchdemo
+    username: root
+    password: 123456

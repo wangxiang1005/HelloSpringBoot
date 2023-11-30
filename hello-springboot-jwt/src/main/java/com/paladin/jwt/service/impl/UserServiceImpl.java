@@ -8,7 +8,6 @@ import com.paladin.jwt.util.JWTUtil;
 import com.paladin.jwt.vo.LoginReq;
 import com.paladin.jwt.vo.LoginUser;
 import org.springframework.stereotype.Service;
-
 import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.Map;

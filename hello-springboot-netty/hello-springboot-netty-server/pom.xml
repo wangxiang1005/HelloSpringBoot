@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.paladin</groupId>
-        <artifactId>HelloSpringBoot</artifactId>
+        <artifactId>hello-springboot-netty</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>hello-springboot-application</artifactId>
+    <artifactId>hello-springboot-netty-server</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -18,19 +18,6 @@
     </properties>
 
     <dependencies>
-        <!-- 自定义 -->
-        <dependency>
-            <groupId>com.paladin</groupId>
-            <artifactId>hello-springboot-starter</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.8.5</version>
-        </dependency>
-
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>

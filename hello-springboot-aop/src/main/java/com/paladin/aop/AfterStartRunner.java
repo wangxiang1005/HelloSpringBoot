@@ -13,7 +13,7 @@ public class AfterStartRunner implements CommandLineRunner {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     public void run(String... args) {
-        logger.debug("after start debug...");
-        logger.info("after start info...");
+        System.out.println("after start debug...");
+        System.out.println("after start info...");
     }
 }

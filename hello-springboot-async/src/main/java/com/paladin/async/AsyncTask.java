@@ -24,10 +24,10 @@ public class AsyncTask {
 
     @Async
     public Future<String> dealHaveReturnTask(int i) {
-        logger.info("asyncInvokeReturnFuture, parementer=" + i);
+        logger.info("asyncInvokeReturnFuture, parameter=" + i);
         Future<String> future;
         try {
-            Thread.sleep(1000 * i);
+            Thread.sleep(1000L * i);
             future = new AsyncResult<String>("success:" + i);
         } catch (InterruptedException e) {
             future = new AsyncResult<String>("error");

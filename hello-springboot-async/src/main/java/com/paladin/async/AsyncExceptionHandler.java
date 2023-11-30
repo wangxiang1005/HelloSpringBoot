@@ -11,8 +11,8 @@ public class AsyncExceptionHandler implements AsyncUncaughtExceptionHandler {
     @Override
     public void handleUncaughtException(Throwable ex, Method method, Object... params) {
         log.error("Async method has uncaught exception, params:{}" + Arrays.toString(params));
-        if (ex instanceof com.paladin.async.AsyncException) {
-            com.paladin.async.AsyncException asyncException = (com.paladin.async.AsyncException) ex;
+        if (ex instanceof AsyncException) {
+            AsyncException asyncException = (AsyncException) ex;
             log.error("asyncException:"  + asyncException.getMessage());
         }
         log.error("Exception :", ex);

@@ -17,7 +17,7 @@ public class GuavaApplication {
 
     @PostConstruct
     public void generalURltoFile() {
-        // 初次启动的时候开启, 会往url.txt中添加500万条数据
+        // 初次启动的时候开启, 会往url.txt中添加5000条数据
         /*try{
             //注意这块写上自己电脑的路径
             File file = new File("D:\\JakartaEE\\IntelliJ-WorkSpace\\Hello\\HelloSpringBoot\\hello-springboot-guava\\src\\main\\resources\\url.txt");
@@ -28,7 +28,7 @@ public class GuavaApplication {
             OutputStreamWriter osw = new OutputStreamWriter(fos);
             BufferedWriter bw = new BufferedWriter(osw);
             StringBuilder builder = new StringBuilder();
-            for (int i = 0; i < 5000000; i++) {
+            for (int i = 0; i < 5000; i++) {
                 String name = RandomStringUtils.randomAlphabetic(5);
                 String fileName = "https://www." + name + ".com" + i + "\n";
                 builder.append(fileName);

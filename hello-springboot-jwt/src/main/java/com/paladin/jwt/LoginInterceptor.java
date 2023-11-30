@@ -59,28 +59,17 @@ public class LoginInterceptor implements HandlerInterceptor {
         return false;
     }
 
-    /**
-     *
-     * @param response
-     * @param msg
-     */
     private void sendJsonMessage(HttpServletResponse response, String msg) {
         Map<String,Object> result = new HashMap<>();
         result.put("code",10000);
         result.put("msg",msg);
         ObjectMapper objectMapper = new ObjectMapper();
         response.setContentType("application/json;charset=utf-8");
-        PrintWriter writer = null;
-        try {
-            writer = response.getWriter();
+        try (PrintWriter writer = response.getWriter()) {
             writer.print(objectMapper.writeValueAsString(result));
             response.flushBuffer();
         } catch (IOException e) {
             log.warn("响应json数据给前端异常");
-        }finally {
-            if(writer!=null){
-                writer.close();
-            }
         }
     }
 }

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class UserAccessAspect {
 
-    @Pointcut(value = "@annotation(com.xncoding.aop.aspect.UserAccess)")
+    @Pointcut(value = "@annotation(com.paladin.aop.aspect.UserAccess)")
     public void access() {
 
     }

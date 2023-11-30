@@ -40,15 +40,14 @@ public class KaptchaController {
     public void getCaptcha(HttpServletRequest request, HttpServletResponse response){
         //创建验证码内容
         String captchaText = captchaProducer.createText();
-        log.info("图形验证码内容为：{}",captchaText);
-
+        System.out.printf("图形验证码内容为：{%s%n}", captchaText);
         redisTemplate.opsForValue().set(getCaptchaKey(request),captchaText,CAPTCHA_CODE_EXPIRED, TimeUnit.MILLISECONDS);
         //生成图片
         BufferedImage captchaImage = captchaProducer.createImage(captchaText);
         try(ServletOutputStream outputStream = response.getOutputStream()){
             ImageIO.write(captchaImage,"jpg",outputStream);
         }catch (IOException e){
-            log.error("获取流出错："+e.getMessage());
+            System.out.printf("获取流出错：{%s%n}", e.getMessage());
         }
     }
 
@@ -59,6 +58,7 @@ public class KaptchaController {
      */
     private String getCaptchaKey(HttpServletRequest request) {
         String userAgent = request.getHeader("User-Agent");
+        System.out.printf("userAgent：{%s%n}", userAgent);
         return "account:captcha:"+ userAgent;
     }
 }
