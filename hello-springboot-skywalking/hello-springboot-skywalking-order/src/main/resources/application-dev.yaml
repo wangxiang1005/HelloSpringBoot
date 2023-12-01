@@ -1,0 +1,11 @@
+server:
+  port: 18081
+
+spring:
+  application:
+    name: hello-springboot-skywalking-order
+  datasource:
+    url: jdbc:mysql://192.168.5.179:3306/hello?serverTimezone=Asia/Shanghai&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useSSL=false
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456

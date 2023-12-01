@@ -30,6 +30,9 @@
         <module>hello-springboot-jwt</module>
         <module>hello-springboot-redis</module>
         <module>hello-springboot-netty</module>
+        <module>hello-springboot-skywalking</module>
+        <module>hello-springboot-skywalking/hello-springboot-skywalking-order</module>
+        <module>hello-springboot-skywalking/hello-springboot-skywalking-cargo</module>
     </modules>
 
     <properties>
@@ -38,7 +41,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jackson-databind-version>2.9.4</jackson-databind-version>
         <druid.version>1.1.2</druid.version>
-        <mysql-connector.version>8.0.7-dmr</mysql-connector.version>
+        <mysql-connector.version>5.1.44</mysql-connector.version>
         <mybatis-plus.version>2.1.8</mybatis-plus.version>
         <mybatisplus-spring-boot-starter.version>1.0.5</mybatisplus-spring-boot-starter.version>
     </properties>
@@ -83,6 +86,11 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.12.0</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql-connector.version}</version>
         </dependency>
     </dependencies>
 
