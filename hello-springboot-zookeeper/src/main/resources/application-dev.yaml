@@ -1,0 +1,15 @@
+server:
+  port: 9998
+
+spring:
+  application:
+    name: hello-springboot-zookeeper
+
+zookeeper:
+  curator:
+    ip: 192.168.5.181:2181
+    sessionTimeOut: 50000
+    sleepMsBetweenRetry: 1000
+    maxRetries: 3
+    namespace: demo
+    connectionTimeoutMs: 50000

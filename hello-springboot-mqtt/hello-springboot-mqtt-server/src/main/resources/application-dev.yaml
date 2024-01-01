@@ -1,0 +1,20 @@
+server:
+  port: 8018
+
+spring:
+  application:
+    name: hello-springboot-mqtt-server
+  #MQTT配置信息
+  mqtt:
+    #MQTT服务地址,端口号默认1883,如果有多个,用逗号隔开
+    url: tcp://192.168.5.179:1883
+    #用户名
+    username: admin
+    #密码
+    password: admin123
+    #客户端id(不能重复)
+    client:
+      id: hello-springboot-mqtt-server-id
+    #MQTT默认的消息推送主题,实际可在调用接口是指定
+    default:
+      topic: test

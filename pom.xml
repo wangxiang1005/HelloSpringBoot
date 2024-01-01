@@ -31,8 +31,12 @@
         <module>hello-springboot-redis</module>
         <module>hello-springboot-netty</module>
         <module>hello-springboot-skywalking</module>
-        <module>hello-springboot-skywalking/hello-springboot-skywalking-order</module>
-        <module>hello-springboot-skywalking/hello-springboot-skywalking-cargo</module>
+        <module>hello-springboot-design</module>
+        <module>hello-springboot-base</module>
+        <module>hello-springboot-mqtt</module>
+        <module>hello-springboot-screw</module>
+        <module>hello-springboot-guacamelo</module>
+        <module>hello-springboot-zookeeper</module>
     </modules>
 
     <properties>

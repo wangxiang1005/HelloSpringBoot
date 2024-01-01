@@ -1,0 +1,34 @@
+package com.paladin.base.common.nio;
+
+import java.io.IOException;
+import java.io.RandomAccessFile;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
+
+public class MappedByteBufferDemo {
+
+	public static void main(String[] args) {
+		String currentDir = System.getProperty("user.dir");
+		String textPath = currentDir + "/java-demos/java-base/src/main/resources/mapped.txt";
+		MmapUtils utils = new MmapUtils(textPath, 1024);
+		byte[] bytes = utils.readContent(1024);
+		System.out.println(new String(bytes));
+	}
+
+	public static void readFileByMappedByteBuffer(String currentDir) {
+		try (RandomAccessFile file = new RandomAccessFile(currentDir + "/java-demos/java-base/src/main/resources/mapped.txt", "r");
+			 FileChannel channel = file.getChannel()) {
+			long fileSize = channel.size();
+			MappedByteBuffer buffer = channel.map(FileChannel.MapMode.READ_ONLY, 0, fileSize);
+			// 读取文件数据
+			byte[] data = new byte[(int) fileSize];
+			buffer.get(data);
+			// 处理文件数据
+			String content = new String(data);
+			System.out.println(content);
+		}
+		catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

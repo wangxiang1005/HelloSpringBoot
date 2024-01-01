@@ -1,0 +1,8 @@
+server:
+  port: 9633
+  servlet:
+    context-path: /remote
+
+guacamelo:
+  host: 192.168.5.180
+  port: 4482
