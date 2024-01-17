@@ -10,22 +10,19 @@
 **DONE**
 
 ## <module>hello-springboot-base</module>
-
+**DONE**
 
 ## <module>hello-springboot-batch</module>
-
+**DONE**
 
 ## <module>hello-springboot-design</module>
-
-
-## <module>hello-springboot-echarts</module>
-
+**DONE**
 
 ## <module>hello-springboot-execl</module>
 **DONE**
 
 ## <module>hello-springboot-grpc</module>
-
+**DONE**
 
 ## <module>hello-springboot-guacamelo</module>
 **DONE**
@@ -46,7 +43,7 @@
 **DONE**
 
 ## <module>hello-springboot-netty</module>
-
+**DONE**
 
 ## <module>hello-springboot-screw</module>
 **DONE**

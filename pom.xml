@@ -22,7 +22,6 @@
         <module>hello-springboot-aop</module>
         <module>hello-springboot-async</module>
         <module>hello-springboot-batch</module>
-        <module>hello-springboot-echarts</module>
         <module>hello-springboot-grpc</module>
         <module>hello-springboot-kaptcha</module>
         <module>hello-springboot-guava</module>

@@ -21,7 +21,6 @@
     <modules>
         <module>hello-springboot-base-agent</module>
         <module>hello-springboot-base-buddy</module>
-        <module>hello-springboot-base-jmh</module>
         <module>hello-springboot-base-cli</module>
         <module>hello-springboot-base-common</module>
     </modules>

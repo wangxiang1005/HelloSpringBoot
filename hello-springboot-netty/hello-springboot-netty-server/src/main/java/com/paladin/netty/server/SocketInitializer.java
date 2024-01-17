@@ -8,7 +8,7 @@ import io.netty.handler.codec.bytes.ByteArrayEncoder;
 import org.springframework.stereotype.Component;
 
 /**
- * Socket 初始化器，每一个Channel进来都会调用这里的 InitChannel 方法
+ * Socket初始化器，每一个Channel进来都会调用这里的InitChannel方法
  *
  **/
 @Component

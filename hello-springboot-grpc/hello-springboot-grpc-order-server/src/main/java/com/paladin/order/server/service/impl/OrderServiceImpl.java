@@ -65,6 +65,7 @@ public class OrderServiceImpl implements OrderService {
 
         //5.生成订单
         log.info("当前订单购买的商品为:{},原价为:{},本次消耗优惠券:{},实际支付金额:{}",
-                productData.getString("name"),productData.getBigDecimal("price"),couponData.getString("name"),orderConfirmRequest.getTotalAmount());
+                productData.getString("name"),productData.getBigDecimal("price"),
+                couponData.getString("name"),orderConfirmRequest.getTotalAmount());
     }
 }

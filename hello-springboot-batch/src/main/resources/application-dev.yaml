@@ -4,7 +4,9 @@ server:
 spring:
   application:
     name: hello-springboot-batch
+
   datasource:
-    url: jdbc:mysql://192.168.5.179:3306/springbatchdemo
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.5.181:3306/springbatchdemo?allowPublicKeyRetrieval=true&characterEncoding=UTF-8&allowMultiQueries=true&useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai
     username: root
     password: 123456

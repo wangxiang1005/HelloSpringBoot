@@ -30,6 +30,7 @@ import java.util.concurrent.TimeUnit;
 public class ZookeeperController {
     @Resource(name = "curatorClient")
     private CuratorFramework client;
+
     @Value("${zookeeper.curator.namespace}")
     String namespace;
 
@@ -39,7 +40,7 @@ public class ZookeeperController {
             @ApiImplicitParam(name = "path", value = "路径", required = true, paramType = "query"),
             @ApiImplicitParam(name = "data", value = "值", required = false, paramType = "query"),
     })
-    public String createZnode(String path,@RequestParam(defaultValue = "")String data){
+    public String createZnode(String path, @RequestParam(defaultValue = "")String data){
         path = "/"+path;
         List<ACL> aclList = new ArrayList<>();
         Id id = new Id("world", "anyone");

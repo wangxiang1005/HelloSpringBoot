@@ -9,7 +9,7 @@ import io.netty.util.concurrent.GlobalEventExecutor;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * Socket拦截器，用于处理客户端的行为
+ * Socket拦截器, 用于处理客户端的行为
  *
  **/
 @Slf4j
