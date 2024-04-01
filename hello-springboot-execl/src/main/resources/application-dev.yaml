@@ -4,3 +4,7 @@ server:
 spring:
   application:
     name: hello-springboot-execl
+
+logging:
+  level:
+    root: debug

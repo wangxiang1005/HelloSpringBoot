@@ -36,6 +36,8 @@
         <module>hello-springboot-screw</module>
         <module>hello-springboot-guacamelo</module>
         <module>hello-springboot-zookeeper</module>
+        <module>hello-springboot-stream</module>
+        <module>hello-springboot-event</module>
     </modules>
 
     <properties>
